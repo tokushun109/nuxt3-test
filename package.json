@@ -7,10 +7,9 @@
     "preview": "nuxt preview"
   },
   "devDependencies": {
-    "nuxt": "3.0.0-rc.4"
-  },
-  "dependencies": {
+    "nuxt": "3.0.0-rc.4",
     "sass": "^1.53.0",
     "vuetify": "^3.0.0-beta.0"
-  }
+  },
+  "dependencies": {}
 }
