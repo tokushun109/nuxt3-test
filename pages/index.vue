@@ -1,14 +1,18 @@
 <template>
-    <div>
-        <form class="form" @submit.prevent="searchForStuff">
-            <input type="text" v-model="searchText">
-            <button>Search For Shows</button>
-        </form>
-        <div class="stuff" style="display: flex; flex-wrap: wrap;">
-            <div v-for="show in myDate">
-                <img :src="show.show?.image?.medium" alt="">
-            </div>
-        </div>
+    <div class="text-center">
+        <v-form>
+            <v-container>
+                <v-text-field v-model="searchText" label="input search word" required></v-text-field>
+                <v-btn @click="searchForStuff">Search For Shows</v-btn>
+            </v-container>
+        </v-form>
+        <v-container>
+            <v-row>
+                <v-col v-for="show in myDate" :key="show" cols="12" sm="4">
+                    <v-img :src="show.show?.image?.medium" />
+                </v-col>
+            </v-row>
+        </v-container>
     </div>
 </template>
 
