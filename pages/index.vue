@@ -1,5 +1,5 @@
 <template>
-    <div class="text-center">
+    <div>
         <v-form>
             <v-container>
                 <v-text-field v-model="searchText" label="input search word" required></v-text-field>
